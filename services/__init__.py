@@ -1,0 +1,1 @@
+from services.crawler import get_products
