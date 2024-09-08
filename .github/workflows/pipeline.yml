@@ -30,4 +30,4 @@ jobs:
                 uses: docker/build-push-action@v6
                 with:
                     push: true
-                    tags: israelsz13/magalu-webcrawler
+                    tags: israelsz13/magalu-webcrawler:latest

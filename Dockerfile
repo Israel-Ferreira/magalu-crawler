@@ -1,4 +1,7 @@
-FROM python:3.12-alpine
+FROM python:3.12
+
+
+RUN apt-get update && apt-get install -y firefox-esr xvfb
 
 COPY requirements.txt .
 
