@@ -1,4 +1,4 @@
-name: ci
+name: pipeline
 
 on:
     push:
@@ -24,12 +24,10 @@ jobs:
                     username: ${{ secrets.DOCKERHUB_USERNAME }}
                     password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-                    
 
-            
             - 
                 name: Gerar Imagem Docker
                 uses: docker/build-push-action@v6
                 with:
                     push: true
-                    tags: user/app:latest
+                    tags: israelsz13/magalu-webcrawler
